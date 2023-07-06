@@ -1,0 +1,94 @@
+/* you can add to or change this. */
+
+#game div {
+  border: 1px solid black;
+  width: 150px;
+  height: 200px;
+  margin: 17px;
+  display: inline-block;
+  background-image: url("data:image/svg+xml,<svg id='patternId' width='100%' height='100%' xmlns='http://www.w3.org/2000/svg'><defs><pattern id='a' patternUnits='userSpaceOnUse' width='36' height='36' patternTransform='scale(4) rotate(140)'><rect x='0' y='0' width='100%' height='100%' fill='hsla(239,93.8%,19%,1)'/><path d='M3.445 3.624a5 5 0 01-6.89 0m8.973 4.709a10 10 0 01-11.056 0m2.083 24.043a5 5 0 016.89 0m-8.973-4.709a10 10 0 0111.056 0M39.444 3.624a5 5 0 01-6.889 0m8.973 4.709a10 10 0 01-11.056 0m2.082 24.043a5 5 0 016.891 0m-8.973-4.709a10 10 0 0111.056 0m-20.082-6.043a5 5 0 01-6.891 0m0-7.247a5 5 0 016.89 0m2.083 11.956a10 10 0 01-11.056.001m0-16.666a10 10 0 0111.056-.001'  stroke-linecap='square' stroke-width='2' stroke='hsla(190,76.7%,88.2%,1)' fill='none'/><path d='M21.624-3.445a5 5 0 010 6.89m-7.247 0a5 5 0 010-6.89m11.956-2.083a10 10 0 01.001 11.056m-16.666 0a10 10 0 01-.002-11.056m11.958 38.083a5 5 0 010 6.89m-7.247 0a5 5 0 01-.001-6.89m11.956-2.083a10 10 0 01.002 11.056m-16.666 0a10 10 0 01-.002-11.056M3.624 14.555a5 5 0 010 6.891m4.71-8.974a10 10 0 01-.001 11.056m24.042-2.082a5 5 0 01.001-6.891m-4.71 8.974a10 10 0 010-11.056'  stroke-linecap='square' stroke-width='2' stroke='hsla(201,100%,35.7%,1)' fill='none'/></pattern></defs><rect width='800%' height='800%' transform='translate(0,0)' fill='url(%23a)'/></svg>");
+  border-radius: 5px;
+  display: flexbox;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+}
+
+body {
+  min-height: 100vh;
+  min-width: 100vh;
+  background-color: rgb(225, 221, 221);
+  font-family: 'Games', sans-serif;
+
+}
+
+h1 {
+  text-align: center;
+  font-size: 105px;
+  font-weight: bold;
+  color: black;
+}
+
+p {
+  text-align: center;
+  font-size: 70px;
+  font-weight: bold;
+  margin-top: -2rem;
+  color: black;
+}
+
+.restart {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.restart button {
+  border: 1px solid black;
+  font-size: 70px;
+  padding: 10px 20px 0px 10px;
+  border-radius: 10px;
+  background-color: rgb(226, 15, 15);
+  color: white;
+  font-family: 'Games', sans-serif;;
+}
+
+.flipCard {
+  transform: rotateY(180deg);
+}
+
+.card {
+  height: 50px;
+  width: 100x;
+  border-radius: 10px;
+  background-color: chocolate;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: all 500ms ease-in-out;
+}
+
+div#red.flipped {
+  background-color: red;
+  background-image: none;
+}
+
+div#blue.flipped {
+  background-color: blue;
+  background-image: none;
+}
+
+div#green.flipped {
+  background-color: green;
+  background-image: none;
+}
+
+div#orange.flipped {
+  background-color: orange;
+  background-image: none;
+}
+
+div#purple.flipped {
+  background-color: purple;
+  background-image: none;
+}
